@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c0c0c0;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.wrapper {
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+    box-shadow: 0 0 2px #000;
+    background-color: #fff;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+.open {
+    margin-bottom: 30px;
+}
+
+.notifications {
+    width: 365px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.notification {
+    margin-bottom: 25px;
+    padding-left: 65px;
+    min-height: 72px;
+    background-color: #eee;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.notification::before {
+    content: "";
+    position: absolute;
+    left: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.notification-text {
+    margin-bottom: 0;
+}
+
+.notificatin-title {
+    margin-bottom: 6px;
+}
+
+.notification-close {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 6px;
+    right: 3px;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.notification-success {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(164, 182, 96);
+    border-radius: 3px;
+    background-image: -moz-linear-gradient( 90deg, rgb(198,220,118) 0%, rgb(242,251,210) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(198,220,118) 0%, rgb(242,251,210) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(198,220,118) 0%, rgb(242,251,210) 100%);
+    box-shadow: 0px 1px 10px 0px rgba(199, 211, 20, 0.004),inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
+}
+
+.notification-success::before {
+    width: 29px;
+    height: 25px;
+    background-image: url(../images/check.png);
+}
+
+.notification-success .notification-close {
+    background-image: url(../images/close-success.png);
+}
+
+.notification-alert {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(247, 158, 1);
+    border-radius: 3px;
+    background-image: -moz-linear-gradient( 90deg, rgb(235,204,112) 0%, rgb(250,238,204) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(235,204,112) 0%, rgb(250,238,204) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(235,204,112) 0%, rgb(250,238,204) 100%);
+    box-shadow: 0px 1px 10px 0px rgba(252, 163, 6, 0.004),inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
+}
+ 
+.notification-alert::before {
+    width: 29px;
+    height: 31px;
+    background-image: url(../images/info.png);
+}
+
+.notification-alert .notification-close {
+    background-image: url(../images/close-alert.png);
+}
+
+.notification-error {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(193, 0, 44);
+    border-radius: 3px;
+    background-image: -moz-linear-gradient( 90deg, rgb(246,147,170) 0%, rgb(250,204,214) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(246,147,170) 0%, rgb(250,204,214) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(246,147,170) 0%, rgb(250,204,214) 100%);
+    box-shadow: 0px 1px 10px 0px rgba(193, 0, 44, 0.004),inset 0px 2px 1px 0px rgba(216, 216, 216, 0.75);
+} 
+
+.notification-error::before {
+    width: 26px;
+    height: 23px;
+    background-image: url(../images/error.png);
+}
+
+.notification-error .notification-close {
+  background-image: url(../images/close-error.png);
+}
